@@ -1,0 +1,156 @@
+{
+    "odoo_env": {
+        "prefix": "env.odoo",
+        "body": [
+            "self.env.${1|[''],user,context,ref('')|}"
+        ],
+        "description": "Odoo Environment"
+    },
+    "odoo_at_api": {
+        "prefix": "@api.odoo",
+        "body": [
+            "@api.${1|multi,onchange(''),depends(''),onchange(''),cr_uid_ids_context|}$0"
+        ],
+        "description": "Odoo api to decorate functions"
+    },
+    "odoo_fields_binary": {
+        "prefix": "fields.binary.odoo",
+        "body": [
+            "$1 = fields.Binary($2)$0"
+        ],
+        "description": "Field binary for Odoo"
+    },
+    "odoo_fields_char": {
+        "prefix": "fields.char.odoo",
+        "body": [
+            "$1 = fields.Char($2)$0"
+        ],
+        "description": "Field Char for Odoo"
+    },
+    "odoo_fields_text": {
+        "prefix": "fields.text.odoo",
+        "body": [
+            "$1 = fields.Text($2)$0"
+        ],
+        "description": "Field Text for Odoo"
+    },
+    "odoo_fields_html": {
+        "prefix": "fields.html.odoo",
+        "body": [
+            "$1 = fields.Html($2)$0"
+        ],
+        "description": "Field HTML for Odoo"
+    },
+    "odoo_fields_int": {
+        "prefix": "fields.int.odoo",
+        "body": [
+            "$1 = fields.Int($2)$0"
+        ],
+        "description": "Field Int for Odoo"
+    },
+    "odoo_fields_float": {
+        "prefix": "fields.float.odoo",
+        "body": [
+            "$1 = fields.Float($2)$0"
+        ],
+        "description": "Field Float for Odoo"
+    },
+    "odoo_fields_date": {
+        "prefix": "fields.date.odoo",
+        "body": [
+            "$1 = fields.Date($2)$0"
+        ],
+        "description": "Field Date for Odoo"
+    },
+    "odoo_fields_datetime": {
+        "prefix": "fields.datetime.odoo",
+        "body": [
+            "$1 = fields.Datetime($2)$0"
+        ],
+        "description": "Field Datetime for Odoo"
+    },
+    "odoo_fields_selection": {
+        "prefix": "fields.selection.odoo",
+        "body": [
+            "$1 = fields.Selection([('$2', '$3')$4])$0"
+        ],
+        "description": "Field Selection for Odoo"
+    },
+    "odoo_fields_many2one": {
+        "prefix": "fields.many2one.odoo",
+        "body": [
+            "$1_id = fields.Many2one('$2')$0"
+        ],
+        "description": "Field Many2one for Odoo"
+    },
+    "odoo_fields_many2many": {
+        "prefix": "fields.many2many.odoo",
+        "body": [
+            "$1_ids = fields.Many2many('$2')$0"
+        ],
+        "description": "Field Many2many for Odoo"
+    },
+    "odoo_fields_one2many": {
+        "prefix": "fields.one2many.odoo",
+        "body": [
+            "$1_ids = fields.One2many('$2', '$3')$0"
+        ],
+        "description": "Field One2many for Odoo"
+    },
+    "odoo_class": {
+        "prefix": "class.odoo",
+        "body": [
+            "class $1(models.Model):\n\n",
+            "\t_name = '$2'",
+            "\t_description = '$3'\n\n$0"
+        ],
+        "description": "New Class for Odoo"
+    },
+    "odoo_class_inherit": {
+        "prefix": "class.inherit.odoo",
+        "body": [
+            "class $1(models.Model):\n\n",
+            "\t_inherit = '$2'\n\n$0"
+        ],
+        "description": "New Class for Odoo"
+    },
+    "odoo_compute": {
+        "prefix": "compute.odoo",
+        "body": [
+            "@api.depends('${1:field}')",
+            "def _compute_${1:field}(self):",
+            "\tself.${1:field} = $0\n"
+        ],
+        "description": "Method compute"
+    },
+    "odoo_create": {
+        "prefix": "create.odoo",
+        "body": [
+            "@api.model",
+            "def create(self, values):",
+            "\tresult = super($1, self).create(values)",
+            "\t$0",
+            "\treturn result"
+        ],
+        "description": "Method compute"
+    },
+    "odoo_onchange": {
+        "prefix": "onchange.odoo",
+        "body": [
+            "@api.onchange('${1:field}')",
+            "def onchange_${1:field}(self):",
+            "\tself.${1:field} = $0",
+            ""
+        ],
+        "description": "Method onchange"
+    },
+    "prova": {
+        "prefix": "prova",
+        "body": [
+            "$1",
+            "${1/[\\.-]/_/g}",
+            "$1"
+        ],
+        "description": "Method onchange"
+    }
+}
