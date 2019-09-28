@@ -32,6 +32,20 @@ Add snippets for Odoo from 9.0 to 13.0
 
 | Snippet | Result |
 | ------- | ------ |
+| field.odoo | Field |
+| field.sum.odoo | Sum on field |
+| field.attribute.odoo | Attributes of a field |
+| field.widget.odoo | List of all the widget for a field |
+| button.object.odoo | Button object |
+| button.action.odoo | Button action |
+| form.odoo | Form view |
+| tree.odoo | Tree view |
+| tree.options.odoo | Create, edit and delete options for a tree view |
+| tree.editable.odoo | Top or Botton editable options for a tree view |
+| search.odoo | Search view |
+| action.odoo | Action view |
+| menuitem.odoo | Menuitem view |
+| menuitem.root.odoo | Menuitem view with no parent and action |
 
 ## Release Notes
 
