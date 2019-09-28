@@ -2,14 +2,14 @@
     "odoo_env": {
         "prefix": "env.odoo",
         "body": [
-            "self.env.${1|[''],user,context,ref('')|}"
+            "self.env${1|[''],.user,.context,.ref('')|}"
         ],
         "description": "Odoo Environment"
     },
     "odoo_at_api": {
         "prefix": "@api.odoo",
         "body": [
-            "@api.${1|multi,onchange(''),depends(''),onchange(''),cr_uid_ids_context|}$0"
+            "@api.${1|multi,depends(''),onchange(''),cr_uid_ids_context|}$0"
         ],
         "description": "Odoo api to decorate functions"
     },
@@ -100,7 +100,7 @@
     "odoo_class": {
         "prefix": "class.odoo",
         "body": [
-            "class $1(models.Model):\n\n",
+            "class $1(models.Model):\n",
             "\t_name = '$2'",
             "\t_description = '$3'\n\n$0"
         ],
@@ -109,7 +109,7 @@
     "odoo_class_inherit": {
         "prefix": "class.inherit.odoo",
         "body": [
-            "class $1(models.Model):\n\n",
+            "class $1(models.Model):\n",
             "\t_inherit = '$2'\n\n$0"
         ],
         "description": "New Class for Odoo"
@@ -141,15 +141,6 @@
             "def onchange_${1:field}(self):",
             "\tself.${1:field} = $0",
             ""
-        ],
-        "description": "Method onchange"
-    },
-    "prova": {
-        "prefix": "prova",
-        "body": [
-            "$1",
-            "${1/[\\.-]/_/g}",
-            "$1"
         ],
         "description": "Method onchange"
     }
