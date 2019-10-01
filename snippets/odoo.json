@@ -134,6 +134,28 @@
         ],
         "description": "Method compute"
     },
+    "odoo_write": {
+        "prefix": "write.odoo",
+        "body": [
+            "@api.multi",
+            "def write(self, values):",
+            "\tres = super().write(values)",
+            "\t$0",
+            "\treturn res"
+        ],
+        "description": "Method write"
+    },
+    "odoo_unlink": {
+        "prefix": "unlink.odoo",
+        "body": [
+            "@api.multi",
+            "def unlink(self):",
+            "\tres = super().unlink()",
+            "\t$0",
+            "\treturn res"
+        ],
+        "description": "Method write"
+    },
     "odoo_onchange": {
         "prefix": "onchange.odoo",
         "body": [
@@ -143,5 +165,36 @@
             ""
         ],
         "description": "Method onchange"
+    },
+    "odoo_copy": {
+        "prefix": "copy.odoo",
+        "body": [
+            "@api.multi",
+            "def copy(self, default=None):",
+            "\tres = super().copy(default)",
+            "\t$0",
+            "\treturn res"
+        ],
+        "description": "Method write"
+    },
+    "sql_constarints" : {
+        "prefix": "sql.constraints.odoo",
+        "body": [
+            "_sql_constraints = [",
+            "\t(",
+            "\t\t'${1:constraint_uniq_name}',",
+            "\t\t'${2:sql_code}',",
+            "\t\t'${3:message}'",
+            "\t),",
+            "]$0"
+        ],
+        "description": "SQL constraints"
+    },
+    "odoo_import": {
+        "prefix": "import.odoo",
+        "body": [
+            "from odoo import ${1:models, }${2:fields, }${3:api, }${4:_, }${5:tools}"
+        ],
+        "description": "Import Odoo"
     }
 }

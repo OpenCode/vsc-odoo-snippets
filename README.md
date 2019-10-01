@@ -26,7 +26,12 @@ Add snippets for Odoo from 9.0 to 13.0
 | class.inherit.odoo | Inherit an existing Odoo class |
 | compute.odoo | Compute function |
 | create.odoo | Create Function |
+| write.odoo | Write Function |
+| unlink.odoo | Unlink Function |
 | onchange.odoo | Onchange Function |
+| copy.odoo | Copy Function |
+| sql.constraints.odoo | SQL Constraints |
+| import.odoo | Import Odoo |
 
 ### XML
 
