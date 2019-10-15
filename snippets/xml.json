@@ -151,8 +151,8 @@
             "<record id=\"$1_action\" model=\"ir.actions.act_window\">",
             "\t<field name=\"name\">$2.action</field>",
             "\t<field name=\"res_model\">$2</field>",
-            "\t<field name=\"res_model\">${3:form}</field>",
-            "\t<field name=\"res_model\">${4:tree,form}</field>",
+            "\t<field name=\"view_type\">${3:form}</field>",
+            "\t<field name=\"view_mode\">${4:tree,form}</field>",
             "</record>"
         ],
         "description": "Odoo Action"
