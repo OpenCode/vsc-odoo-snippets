@@ -44,7 +44,9 @@ Add snippets for Odoo from 9.0 to 13.0
 | button.object.odoo | Button object |
 | button.action.odoo | Button action |
 | form.odoo | Form view |
+| form.inherit.odoo | Form view inherit |
 | tree.odoo | Tree view |
+| tree.inherit.odoo | Tree view inherit |
 | tree.options.odoo | Create, edit and delete options for a tree view |
 | tree.editable.odoo | Top or Botton editable options for a tree view |
 | search.odoo | Search view |
