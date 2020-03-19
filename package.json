@@ -2,7 +2,12 @@
     "name": "odoo-snippets",
     "displayName": "visual_studio_code_odoo_snippets",
     "description": "Odoo snippets for all the versions",
+    "publisher": "scapigliato",
     "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/OpenCode/vsc-odoo-snippets.git"
+    },
     "engines": {
         "vscode": "^1.32.0"
     },
