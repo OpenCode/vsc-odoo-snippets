@@ -1,9 +1,19 @@
 {
     "name": "odoo-snippets",
-    "displayName": "visual_studio_code_odoo_snippets",
+    "displayName": "Odoo Snippets",
     "description": "Odoo snippets for all the versions",
     "publisher": "scapigliato",
-    "version": "0.0.1",
+    "version": "0.1.0",
+	"license": "LGPL-3.0-or-later",
+	"author": {
+		"name": "Francesco Apruzzese"
+	},
+	"galleryBanner": {
+		"color": "#875A7B"
+	},
+	"bugs": {
+		"url": "https://github.com/OpenCode/vsc-odoo-snippets/issues"
+	},
     "repository": {
         "type": "git",
         "url": "https://github.com/OpenCode/vsc-odoo-snippets.git"
@@ -14,6 +24,10 @@
     "categories": [
         "Snippets"
     ],
+	"keywords": [
+		"odoo", "openerp", "python", "xml", "module"
+	],
+	"icon": "readme/icon.png",
     "contributes": {
         "snippets": [
             {
