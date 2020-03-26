@@ -53,3 +53,8 @@ Add snippets for Odoo from 9.0 to 13.0
 | action.odoo | Action view |
 | menuitem.odoo | Menuitem view |
 | menuitem.root.odoo | Menuitem view with no parent and action |
+
+
+# Support
+
+<a href="https://www.buymeacoffee.com/scapigliato" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/lato-violet.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
