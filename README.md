@@ -11,6 +11,7 @@ Add snippets for Odoo from 9.0 to 13.0
 | env.odoo | self.env with multi selection |
 | @api.odoo | @api with multi selection |
 | fields.binary.odoo | Odoo field binary |
+| fields.boolean.odoo | Odoo field boolean |
 | fields.char.odoo | Odoo field char |
 | fields.text.odoo | Odoo field text |
 | fields.html.odoo | Odoo field html |
@@ -32,6 +33,8 @@ Add snippets for Odoo from 9.0 to 13.0
 | copy.odoo | Copy Function |
 | sql.constraints.odoo | SQL Constraints |
 | import.odoo | Import Odoo |
+| exceptions.import.odoo | Import Exceptions Odoo |
+| exceptions.odoo | Available Exceptions |
 
 ### XML
 
@@ -40,15 +43,21 @@ Add snippets for Odoo from 9.0 to 13.0
 | field.odoo | Field |
 | field.sum.odoo | Sum on field |
 | field.attribute.odoo | Attributes of a field |
+| field.attrs.odoo | Attrs of a field |
 | field.widget.odoo | List of all the widget for a field |
+| field.options.odoo | Options for a field |
 | button.object.odoo | Button object |
 | button.action.odoo | Button action |
 | form.odoo | Form view |
 | form.inherit.odoo | Form view inherit |
 | tree.odoo | Tree view |
 | tree.inherit.odoo | Tree view inherit |
+| tree.decoration.odoo | Decoration for a tree view |
 | tree.options.odoo | Create, edit and delete options for a tree view |
 | tree.editable.odoo | Top or Botton editable options for a tree view |
+| calendar.odoo | Calendar view |
+| graph.odoo | Graph view |
+| pivot.odoo | Pivot view |
 | search.odoo | Search view |
 | action.odoo | Action view |
 | menuitem.odoo | Menuitem view |
