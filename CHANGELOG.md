@@ -1,6 +1,10 @@
 # Change Log
 
-## 0.1.1
+## 0.2.1
+
+- Fix Typo
+
+## 0.2.0
 
 **Python**
 
@@ -10,6 +14,7 @@
 - Improve create. Super is python3 compatible
 - Improve import. Object ordered by name
 - Fix class. Can be selected model type (Abstract, Model, Transient)
+- Add import exceptions and list of exceptions errors
 - Fix various descriptions
 
 **XML**
@@ -23,9 +28,7 @@
 - Add pivot
 - Add attrs for field
 - Add options for field
-- Add import exceptions and list of exceptions errors
 - Fix various descriptions
-
 
 ## 0.1.0
 
