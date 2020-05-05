@@ -1,5 +1,16 @@
 # Change Log
 
+## 0.2.2
+
+**Python**
+
+- Convert python class name in dotted _name
+
+**XML**
+
+- Fix inherit tags on form and tree
+- Convert XML id in dotter name and model
+
 ## 0.2.1
 
 - Fix Typo
