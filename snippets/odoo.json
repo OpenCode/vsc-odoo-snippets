@@ -86,7 +86,10 @@
     "odoo_fields_many2one": {
         "prefix": "fields.many2one.odoo",
         "body": [
-            "$1_id = fields.Many2one('$2')$0"
+            "$1_id = fields.Many2one(",
+            "\t'$2',",
+            "\tstring='${3:${1/(.+?)_([a-z])/${1:/capitalize} ${2:/capitalize}/g}}',",
+            "\t)$0"
         ],
         "description": "Field Many2one for Odoo"
     },
@@ -108,7 +111,7 @@
         "prefix": "class.odoo",
         "body": [
             "class $1(models.${2|AbstractModel,Model,TransientModel|}):\n",
-            "\t_name = '$3'",
+            "\t_name = '${3:${1/(.+?)([A-Z])/${1:/downcase}.${2:/downcase}/g}}'",
             "\t_description = '$4'\n\n$0"
         ],
         "description": "New Class for Odoo"
@@ -117,7 +120,7 @@
         "prefix": "class.inherit.odoo",
         "body": [
             "class $1(models.${2|AbstractModel,Model,TransientModel|}):\n",
-            "\t_inherit = '$2'\n\n$0"
+            "\t_inherit = '${3:${1/(.+?)([A-Z])/${1:/downcase}.${2:/downcase}/g}}'"
         ],
         "description": "Inherit Class for Odoo"
     },
